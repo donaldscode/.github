@@ -1,0 +1,13 @@
+{
+  "name": "bug-demo",
+  "version": "1.0.0",
+  "description": "Demo application with intentional bugs for educational purposes",
+  "main": "buggy-app.js",
+  "scripts": {
+    "start": "node buggy-app.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
