@@ -1,0 +1,9 @@
+TASK: Rewrite the following text to be more professional and compelling while preserving all factual information and numbers.
+
+CONSTRAINTS:
+- Maintain all specific metrics, numbers, and data points exactly as provided
+- Improve tone, flow, and persuasiveness
+- Keep the same structure and length
+- Do not add any new facts or numbers not in the original
+
+INPUT_TEXT: [PLACEHOLDER_FOR_TEXT_TO_REWRITE]
