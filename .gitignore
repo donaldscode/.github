@@ -1,0 +1,16 @@
+node_modules/
+.npm/
+.next/
+out/
+dist/
+coverage/
+.bun/
+bun.lockb
+.env
+.env.local
+.env.*.local
+.DS_Store
+*.log
+logs/
+.cache/
+.vercel/

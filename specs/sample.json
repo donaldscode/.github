@@ -1,0 +1,5 @@
+{
+  "target": "README.md",
+  "algorithm": "sha256",
+  "expected": "fcc90c86421cc88dd838be68a13ca7176ced265a2594f2a33a5664479be69c3e"
+}
