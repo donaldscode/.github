@@ -1,0 +1,7 @@
+INPUT_JSON: Load from canonical.json
+
+TASK: Produce a slide deck outline (10 slides). Each slide: title, 3–6 bullets, one-sentence speaker note.
+
+CONSTRAINTS: Focus on persuading Series A VC: traction, team, tech defensibility, unit economics, roadmap, and ask.
+
+MODEL_SETTINGS: temperature=0.1, max_tokens=800

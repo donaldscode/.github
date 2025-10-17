@@ -1,0 +1,11 @@
+INPUT_JSON: Load from canonical.json
+
+TASK: Write a 1200-word technical blog post titled "WDBX & Abi: Causal Backtrace for Manufacturing."
+
+REQUIREMENTS:
+- Explain WDBX conceptually, how it integrates with LCM and digital twins.
+- Provide example workflow design→simulation→pilot→feedback and 3 engineering challenges + mitigation strategies.
+- Use headings and short code-style pseudocode where helpful.
+- If any claim lacks data, mark [MISSING_DATA: ...].
+
+MODEL_SETTINGS: temperature=0.1, max_tokens=1400

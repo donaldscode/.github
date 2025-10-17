@@ -1,0 +1,69 @@
+INVESTOR MEMO: AbiSim Technologies
+Seed Round — $2M
+
+ONE-LINE THESIS
+AbiSim eliminates manufacturing defects through causal AI that traces anomalies to root causes in real-time, replacing 48-72 hour manual investigations with deterministic, simulation-backed recommendations.
+
+MARKET & TAM
+Precision manufacturing faces a persistent quality crisis: 5-15% of aerospace and automotive parts fail first-pass inspection, unplanned downtime costs $50k-250k per hour, and 20-30% of energy consumption goes to reworking defects. Existing solutions—legacy MES platforms (Siemens, Dassault, Rockwell) and black-box AI startups (Instrumental, Landing AI, Sight Machine)—either lack real-time intelligence or provide opaque predictions that manufacturing engineers distrust.
+
+The global manufacturing automation market is $250B, with industrial AI software capturing $15B. Our 5-year addressable market is $8B, focused on tier-1 aerospace, automotive, medical device, and electronics manufacturers where defect costs justify premium software.
+
+PRODUCT & TECH DEFENSIBILITY
+Our core technology is WDBX (Weighted Directed Backtrace eXecution), a causal inference engine that integrates digital twin simulations with live sensor data to build weighted causal graphs. When Abi—our AI agent—detects an anomaly via multi-modal sensors (vision, acoustic, thermal, force), WDBX traces the defect back through design parameters, process settings, and environmental factors to pinpoint root causes.
+
+Key differentiation: we combine FEA/CFD surrogates (trained on 1000+ design variations) with real-time edge processing (100Hz-10kHz sampling) to deliver explainable, deterministic recommendations instead of black-box predictions. We've filed a provisional patent on WDBX causal graph construction and are building a proprietary data moat (targeting 10M+ labeled sensor-to-defect data points in year 1).
+
+Integration architecture: edge layer handles real-time sensor fusion and local anomaly detection; cloud layer runs WDBX backtrace, digital twin simulations, and model retraining. Human-in-loop gating ensures safety before any parameter changes reach production PLCs.
+
+BUSINESS MODEL & UNIT ECONOMICS
+Revenue model:
+• SaaS: $8k-25k/month per production line (varies by complexity and sensor count)
+• Implementation: $50k-200k one-time for digital twin setup, sensor integration, PLC/SCADA connectors, training
+• Optional success-based fees: 10-20% of measured first-year savings for risk-averse customers
+
+Target customers: Mid-to-large manufacturers (>$100M revenue) in aerospace, automotive, and medical devices.
+
+Unit economics: CAC $125k, LTV $720k, LTV:CAC ratio 5.76, payback period 14 months, target gross margin 75%. Assumptions: 3 lines per customer, 18-month sales cycle, 36-month retention.
+
+Go-to-market: Phase 1 direct sales via warm intros and trade shows; Phase 2 partnerships with MES/PLM vendors (Siemens, Dassault) as an advanced analytics module; Phase 3 channel through system integrators (Rockwell, ABB partners).
+
+PILOT TRACTION & 90-DAY PLAN
+Active pilots:
+1. Aerospace tier-1 supplier (NDA): Turbine bracket line, 12 sensors deployed since September 2024. Baseline scrap rate 8.5%, targeting 40% reduction. Current metrics: 87% WDBX backtrace accuracy, 73% Abi recommendation acceptance rate by engineers.
+2. Automotive components manufacturer: Stamped chassis parts, LOI signed, 2 lines deploying Q1 2025, estimated ACV $180k.
+
+Pipeline: 8 active conversations (4 aerospace, 2 automotive, 2 medical devices), total pipeline ACV $950k.
+
+90-day execution priorities:
+1. Complete aerospace pilot and deliver results report with measured scrap reduction and ROI analysis (Owner: Donald; Success metric: Documented 30%+ scrap reduction; customer testimonial; case study approved for marketing)
+2. Hire Senior Manufacturing Systems Engineer (Owner: Donald; Success metric: Offer accepted; engineer onboarded and leading automotive pilot deployment)
+3. Deploy automotive pilot (2 lines) and achieve first Abi recommendation acceptance (Owner: Manufacturing Engineer + Donald; Success metric: First 10 recommendations generated; 5+ accepted and applied; no safety incidents)
+4. Close seed round ($2M target) (Owner: Donald; Success metric: Term sheet signed; funding wired; 18-month runway secured)
+5. Build WDBX patent narrative and file full utility patent (Owner: Donald + IP counsel; Success metric: Utility patent application filed with USPTO; provisional converted)
+6. Establish partnership conversation with 1 MES/PLM vendor (Owner: Donald / BD hire; Success metric: Executive sponsor identified at Siemens or Dassault; NDA signed; technical integration discussion scheduled)
+
+TOP 5 RISKS & MITIGATIONS
+1. Pilot fails to show measurable ROI (likelihood: Medium, impact: High) → Mitigation: Select lines with clear baseline KPIs and high scrap rates (>5%); implement robust sensor QA; run parallel shadow mode before live recommendations; set conservative success thresholds (20% improvement)
+2. Safety incident from incorrect Abi recommendation (likelihood: Low, impact: Critical) → Mitigation: Strict human-in-loop gates for all parameter changes; define safe operating bounds per process; liability insurance; emergency stop protocols; log all recommendations and approvals
+3. Customer data security breach (likelihood: Low, impact: High) → Mitigation: Edge deployment for sensitive processing; SOC2 compliance roadmap; encryption at rest and in transit; annual penetration testing; clear data ownership contracts
+4. Long sales cycles delay revenue (likelihood: High, impact: Medium) → Mitigation: Prioritize warm intros and existing pilot expansions; offer pilot-to-paid conversion incentives; success-based pricing to reduce upfront risk; target 3-6 month pilot-to-contract timeline
+5. Difficulty hiring specialized talent (likelihood: Medium, impact: Medium) → Mitigation: Competitive equity grants; highlight mission-driven work; sponsor technical contests; partner with universities (co-op programs); consider remote-first for specialized roles
+
+THE ASK
+Raising $2M seed to reach 12 customers and $2.4M ARR within 24 months.
+
+Use of proceeds:
+• Engineering team: $900k (Senior Manufacturing Systems Engineer, Senior ML Engineer, Simulation/FEA Lead)
+• Pilot deployments: $400k (sensor hardware, integration services, on-site support)
+• Sales & marketing: $350k (BD Manager, trade shows, case study production)
+• Operations, legal, compliance: $200k (SOC2, patent filings, insurance)
+• Runway buffer: $150k
+
+Target runway: 18 months to Series A milestone (12 customers, $2.4M ARR, 72% gross margin).
+
+Revenue projections: Year 1: 3 customers, $450k ARR, 65% gross margin. Year 2: 12 customers, $2.4M ARR, 72% gross margin. Year 3: 35 customers, $8.5M ARR, 76% gross margin.
+
+Founder: Donald Filimon, CEO & Technical Lead. Former simulation engineer at aerospace OEM; PhD in mechanical engineering (FEA/optimization); led digital twin projects for 5+ production programs. Pre-seed: $250k from friends, family, and angels (Q2 2024).
+
+We're eliminating the $50k-250k/hour cost of manufacturing downtime with causal AI that engineers trust. Let's talk.

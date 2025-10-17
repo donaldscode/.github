@@ -1,0 +1,339 @@
+{
+  "company": {
+    "name": "AbiSim Technologies",
+    "tagline": "Causal AI for Smart Manufacturing",
+    "mission": "Eliminate manufacturing defects through real-time causal backtrace and adaptive process control",
+    "founded": "2024",
+    "stage": "Seed / Pre-Series A",
+    "headquarters": "San Francisco, CA"
+  },
+  "product": {
+    "core_technology": {
+      "name": "WDBX",
+      "full_name": "Weighted Directed Backtrace eXecution",
+      "description": "A causal inference engine that traces manufacturing anomalies back to root causes across design, process parameters, and sensor signals",
+      "key_innovation": "Integrates digital twin simulations with real-time sensor data to create weighted causal graphs, enabling deterministic root-cause analysis"
+    },
+    "ai_system": {
+      "name": "Abi",
+      "description": "AI-powered manufacturing optimization agent that uses WDBX for causal reasoning and recommends process parameter adjustments",
+      "capabilities": [
+        "Real-time anomaly detection from sensor arrays (vision, acoustic, thermal, force)",
+        "Causal root-cause analysis via WDBX",
+        "Process parameter recommendations with confidence scores",
+        "Human-in-loop gating for critical adjustments",
+        "Continuous learning from pilot feedback"
+      ]
+    },
+    "integration": {
+      "digital_twins": "Maps CAD models to FEA/CFD simulations; runs 100+ parameter variations to build surrogate models",
+      "lcm_integration": "Connects to Lifecycle Management systems for design-to-manufacturing feedback loops",
+      "edge_deployment": "On-premises processing for sensitive manufacturing data with cloud-based model updates"
+    }
+  },
+  "market": {
+    "tam": {
+      "global_manufacturing_automation": 250000000000,
+      "industrial_ai_software": 15000000000,
+      "target_addressable_market_5yr": 8000000000,
+      "focus_segments": ["Aerospace components", "Automotive tier-1 suppliers", "Medical device manufacturing", "Electronics assembly"]
+    },
+    "pain_points": {
+      "scrap_rate": "5-15% of parts fail first-pass inspection in precision manufacturing",
+      "cycle_time_losses": "Unplanned downtime costs $50k-250k per hour",
+      "energy_waste": "20-30% energy consumption attributed to defective part rework",
+      "root_cause_analysis": "Takes 48-72 hours manual investigation per anomaly"
+    },
+    "competitive_landscape": {
+      "traditional_mes": ["Siemens Opcenter", "Dassault DELMIA", "Rockwell FactoryTalk"],
+      "ai_quality_startups": ["Instrumental", "Landing AI", "Sight Machine"],
+      "differentiation": "WDBX provides deterministic causal reasoning vs black-box ML predictions; integrates simulation + real-time data"
+    }
+  },
+  "business_model": {
+    "revenue_streams": [
+      {
+        "type": "SaaS subscription",
+        "pricing": "Per production line: $8k-25k/month depending on line complexity and sensor count",
+        "target_customers": "Mid-to-large manufacturers (>$100M revenue)"
+      },
+      {
+        "type": "Implementation & integration services",
+        "pricing": "$50k-200k one-time per pilot line",
+        "includes": "Digital twin setup, sensor integration, PLC/SCADA connectors, training"
+      },
+      {
+        "type": "Success-based fees",
+        "pricing": "Optional: 10-20% of measured savings in scrap reduction first year",
+        "use_case": "Risk-averse customers"
+      }
+    ],
+    "unit_economics": {
+      "cac": 125000,
+      "ltv": 720000,
+      "ltv_cac_ratio": 5.76,
+      "payback_period_months": 14,
+      "gross_margin_target": 75,
+      "assumptions": "Average customer: 3 lines, 18-month sales cycle, 36-month retention"
+    },
+    "go_to_market": {
+      "phase_1": "Direct sales to tier-1 aerospace/automotive via warm intros and trade shows",
+      "phase_2": "Partnerships with MES/PLM vendors (Siemens, Dassault) as advanced analytics module",
+      "phase_3": "Channel through system integrators (Rockwell, ABB partners)"
+    }
+  },
+  "technology_details": {
+    "architecture": {
+      "edge_layer": "Real-time sensor processing (100Hz-10kHz sampling), local anomaly detection models",
+      "cloud_layer": "WDBX causal engine, digital twin simulations, model training pipeline",
+      "data_flow": "Sensor data → edge processing → anomaly flags → WDBX backtrace → Abi recommendations → human approval → actuation"
+    },
+    "ml_stack": {
+      "sensor_fusion": "Multi-modal time-series models (LSTM, Transformer architectures)",
+      "anomaly_detection": "Isolation forests, autoencoders, statistical process control",
+      "causal_inference": "WDBX proprietary algorithm + DoWhy framework integration",
+      "simulation": "FEA/CFD surrogates trained on 1000+ design variations per part family"
+    },
+    "defensibility": {
+      "ip_strategy": "Provisional patent filed on WDBX causal graph construction; planning 2 additional filings",
+      "data_moat": "Proprietary sensor-to-defect labeled datasets from pilots (10M+ data points expected year 1)",
+      "switching_costs": "Deep integration with customer PLM/MES and trained digital twins"
+    }
+  },
+  "traction": {
+    "pilots": [
+      {
+        "partner": "Aerospace Tier-1 Supplier (under NDA)",
+        "part": "Turbine bracket manufacturing line",
+        "start_date": "2024-09",
+        "status": "Active",
+        "sensors_deployed": 12,
+        "metrics": {
+          "baseline_scrap_rate": 8.5,
+          "target_scrap_reduction": 40,
+          "baseline_cycle_time_seconds": 185,
+          "target_cycle_time_reduction_percent": 12,
+          "wdbx_backtrace_accuracy": 87,
+          "abi_recommendation_acceptance_rate": 73
+        }
+      },
+      {
+        "partner": "Automotive components manufacturer",
+        "part": "Stamped chassis parts",
+        "start_date": "2024-11",
+        "status": "LOI signed, deployment Q1 2025",
+        "projected_lines": 2,
+        "estimated_annual_contract_value": 180000
+      }
+    ],
+    "pipeline": {
+      "active_conversations": 8,
+      "target_sectors": ["Aerospace (4)", "Automotive (2)", "Medical devices (2)"],
+      "total_pipeline_acv": 950000
+    }
+  },
+  "team": {
+    "founders": [
+      {
+        "name": "Donald Filimon",
+        "role": "CEO & Technical Lead",
+        "background": "Former simulation engineer at aerospace OEM; PhD in mechanical engineering (FEA/optimization); led digital twin projects for 5+ production programs",
+        "expertise": ["Digital twins", "FEA/CFD", "Manufacturing systems", "ML deployment"]
+      }
+    ],
+    "advisors": [
+      {
+        "name": "TBD - Manufacturing Operations Executive",
+        "target_profile": "20+ years in tier-1 automotive/aerospace ops, VP-level"
+      },
+      {
+        "name": "TBD - AI Research Advisor",
+        "target_profile": "Causal inference or time-series ML researcher"
+      }
+    ],
+    "hiring_plan_6mo": [
+      "Senior Manufacturing Systems Engineer (PLC/robotics expertise)",
+      "Senior ML Engineer (time-series, anomaly detection)",
+      "Simulation/FEA Lead",
+      "Business Development Manager (OEM partnerships)"
+    ]
+  },
+  "financials": {
+    "funding_history": {
+      "pre_seed": 250000,
+      "sources": "Friends & family, angel investors",
+      "date": "2024-Q2"
+    },
+    "current_ask": {
+      "round": "Seed",
+      "target_amount": 2000000,
+      "use_of_proceeds": {
+        "engineering_team": 900000,
+        "pilot_deployments": 400000,
+        "sales_marketing": 350000,
+        "operations_legal_compliance": 200000,
+        "runway_buffer": 150000
+      },
+      "target_runway_months": 18
+    },
+    "revenue_projections": {
+      "year_1": {
+        "customers": 3,
+        "arr": 450000,
+        "gross_margin_percent": 65
+      },
+      "year_2": {
+        "customers": 12,
+        "arr": 2400000,
+        "gross_margin_percent": 72
+      },
+      "year_3": {
+        "customers": 35,
+        "arr": 8500000,
+        "gross_margin_percent": 76
+      }
+    }
+  },
+  "priority_checklist_90_days": [
+    {
+      "priority": 1,
+      "task": "Complete aerospace pilot and deliver results report with measured scrap reduction and ROI analysis",
+      "owner": "Donald (CEO)",
+      "dependencies": "Sensor data quality, customer approval for parameter changes",
+      "success_metric": "Documented 30%+ scrap reduction; customer testimonial; case study approved for marketing"
+    },
+    {
+      "priority": 2,
+      "task": "Hire Senior Manufacturing Systems Engineer",
+      "owner": "Donald (CEO)",
+      "dependencies": "Funding close; competitive compensation package approved",
+      "success_metric": "Offer accepted; engineer onboarded and leading automotive pilot deployment"
+    },
+    {
+      "priority": 3,
+      "task": "Deploy automotive pilot (2 lines) and achieve first Abi recommendation acceptance",
+      "owner": "Manufacturing Engineer + Donald",
+      "dependencies": "PLC integration complete; WDBX tuned for stamping process",
+      "success_metric": "First 10 recommendations generated; 5+ accepted and applied; no safety incidents"
+    },
+    {
+      "priority": 4,
+      "task": "Close seed round ($2M target)",
+      "owner": "Donald (CEO)",
+      "dependencies": "Pilot traction metrics; investor deck finalized; warm intros to 3+ lead VCs",
+      "success_metric": "Term sheet signed; funding wired; 18-month runway secured"
+    },
+    {
+      "priority": 5,
+      "task": "Build WDBX patent narrative and file full utility patent",
+      "owner": "Donald + IP counsel",
+      "dependencies": "Legal budget allocated; technical diagrams and claims drafted",
+      "success_metric": "Utility patent application filed with USPTO; provisional converted"
+    },
+    {
+      "priority": 6,
+      "task": "Establish partnership conversation with 1 MES/PLM vendor",
+      "owner": "Donald / BD hire",
+      "dependencies": "Pilot case studies ready; integration architecture documented",
+      "success_metric": "Executive sponsor identified at Siemens or Dassault; NDA signed; technical integration discussion scheduled"
+    }
+  ],
+  "risks_and_mitigations": [
+    {
+      "risk": "Pilot fails to show measurable ROI",
+      "likelihood": "Medium",
+      "impact": "High",
+      "mitigation": "Select lines with clear baseline KPIs and high scrap rates (>5%); implement robust sensor QA; run parallel shadow mode before live recommendations; set conservative success thresholds (20% improvement)"
+    },
+    {
+      "risk": "Safety incident from incorrect Abi recommendation",
+      "likelihood": "Low",
+      "impact": "Critical",
+      "mitigation": "Strict human-in-loop gates for all parameter changes; define safe operating bounds per process; liability insurance; emergency stop protocols; log all recommendations and approvals"
+    },
+    {
+      "risk": "Customer data security breach",
+      "likelihood": "Low",
+      "impact": "High",
+      "mitigation": "Edge deployment for sensitive processing; SOC2 compliance roadmap; encryption at rest and in transit; annual penetration testing; clear data ownership contracts"
+    },
+    {
+      "risk": "Long sales cycles delay revenue",
+      "likelihood": "High",
+      "impact": "Medium",
+      "mitigation": "Prioritize warm intros and existing pilot expansions; offer pilot-to-paid conversion incentives; success-based pricing to reduce upfront risk; target 3-6 month pilot-to-contract timeline"
+    },
+    {
+      "risk": "Difficulty hiring specialized talent (manufacturing + ML + simulation)",
+      "likelihood": "Medium",
+      "impact": "Medium",
+      "mitigation": "Competitive equity grants; highlight mission-driven work; sponsor technical contests; partner with universities (co-op programs); consider remote-first for specialized roles"
+    }
+  ],
+  "job_requirements": {
+    "senior_ml_engineer": {
+      "title": "Senior Machine Learning Engineer - Manufacturing AI",
+      "responsibilities": [
+        "Design and deploy time-series anomaly detection models for multi-modal sensor data",
+        "Build and maintain causal inference pipelines integrating WDBX engine",
+        "Develop sensor fusion algorithms for vision, acoustic, thermal, and force data streams",
+        "Collaborate with manufacturing engineers to tune model performance on production lines",
+        "Implement model monitoring, A/B testing, and continuous improvement frameworks",
+        "Contribute to ML infrastructure: feature stores, model registry, deployment pipelines"
+      ],
+      "required_skills": [
+        "5+ years ML engineering experience, 2+ years in production systems",
+        "Deep expertise in time-series modeling (LSTM, Transformers, state-space models)",
+        "Proficiency in PyTorch or TensorFlow; Python; SQL; Git",
+        "Experience with sensor data and signal processing",
+        "Strong software engineering practices: testing, CI/CD, code review",
+        "Ability to explain complex ML concepts to non-technical stakeholders"
+      ],
+      "preferred_skills": [
+        "Background in manufacturing, robotics, or industrial IoT",
+        "Familiarity with PLC/SCADA systems and industrial protocols (OPC-UA, Modbus)",
+        "Experience with causal inference methods or simulation-based modeling",
+        "Knowledge of FEA/CFD or digital twin technologies",
+        "Edge ML deployment experience (ONNX, TensorRT, etc.)"
+      ],
+      "compensation": {
+        "base_salary_range": "140k-190k USD",
+        "equity": "0.25%-0.75% depending on experience and seniority",
+        "benefits": "Health, dental, vision insurance; 401k; flexible vacation; remote-friendly"
+      },
+      "interview_process": [
+        "Stage 1: Recruiter screen (30 min) - mission fit and background",
+        "Stage 2: Take-home problem (90 min) - sensor fusion or anomaly detection challenge",
+        "Stage 3: Technical deep dive (90 min) - architecture design and ML systems discussion",
+        "Stage 4: Team pairing session (60 min) - collaborative debugging or feature implementation",
+        "Stage 5: Leadership & culture interview (45 min)",
+        "Stage 6: Offer and negotiation"
+      ],
+      "sample_kpis": [
+        "Model accuracy on pilot anomaly detection: >90% precision, >85% recall",
+        "Recommendation acceptance rate by manufacturing engineers: >70%",
+        "Model latency: <500ms inference time for real-time alerts",
+        "Code quality: >80% test coverage; all PRs reviewed and approved",
+        "Deployment velocity: ship model improvements every 2-4 weeks"
+      ]
+    }
+  },
+  "culture": {
+    "values": [
+      "Technical excellence: We solve hard problems with rigorous engineering",
+      "Customer obsession: Manufacturing engineers are our heroes; we build tools they trust",
+      "Ownership: Early team members own entire modules and see direct impact",
+      "Transparency: Open feedback, shared metrics, honest about risks and unknowns",
+      "Work-life balance: Sustainable pace; we're building for the long term"
+    ],
+    "remote_policy": "Hybrid-friendly; SF Bay Area presence preferred but open to remote for exceptional candidates. Quarterly in-person sprints.",
+    "perks": [
+      "Competitive salary + meaningful equity",
+      "Health, dental, vision, 401k",
+      "Flexible vacation (minimum 3 weeks encouraged)",
+      "Learning budget: $2k/year for courses, conferences, books",
+      "Latest hardware: MacBook Pro / Linux workstation, dual monitors",
+      "Occasional factory visits to see your work deployed in production"
+    ]
+  }
+}

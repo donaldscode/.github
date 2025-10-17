@@ -1,0 +1,11 @@
+INPUT: Text with potential hallucinations or missing data markers
+
+TASK: Rewrite to ensure all numeric claims are traceable to canonical.json
+
+CONSTRAINTS:
+- Remove any invented statistics
+- Replace unverifiable claims with [MISSING_DATA: <required field>]
+- Preserve tone and structure
+- Ensure all numbers match canonical.json exactly
+
+MODEL_SETTINGS: temperature=0.0, max_tokens=1000
