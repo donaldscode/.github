@@ -1,0 +1,12 @@
+INPUT_JSON: @canonical.json
+
+TASK: Rewrite the provided draft to improve clarity, ensure tone matches the target audience, and strictly preserve all numeric claims and facts from INPUT_JSON. Replace any invented or unknown metrics with [MISSING_DATA: <metric_name>].
+
+REQUIREMENTS:
+- Do not change any numbers found in INPUT_JSON.
+- If a required detail is not present in INPUT_JSON, insert [MISSING_DATA: ...] verbatim.
+- Keep structure and headings; tighten phrasing for concision.
+
+MODEL_SETTINGS: temperature=0.0, max_tokens=800
+
+RETURN: Revised text only.
