@@ -1,0 +1,11 @@
+INPUT_JSON: Load the contents of canonical.json
+
+TASK: Generate a careers page (Markdown) targeted at senior ML engineers, simulation experts, and control systems engineers.
+
+REQUIREMENTS:
+- Include: mission statement, top 5 reasons to join, 3 sample role descriptions with responsibilities and KPIs, early team culture bullets, visa/remote policy, perks relevant to senior hires.
+- Tone: ambitious, technical, respectful.
+- Output in Markdown.
+- Preserve facts from canonical.json; if missing, mark [MISSING_DATA: ...].
+
+MODEL_SETTINGS: temperature=0.1, max_tokens=900

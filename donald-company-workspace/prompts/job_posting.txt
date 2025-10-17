@@ -1,0 +1,10 @@
+INPUT_JSON: Load the contents of canonical.json
+
+TASK: Create a senior ML engineer job posting (500–700 words) with requirements, responsibilities, interview stages, and sample KPIs.
+
+CONSTRAINTS:
+- Include skills: simulation/FEA familiarity, time-series sensor analytics, model interpretability, PLC/robotics integration preferred.
+- Include remote/hybrid options and compensation band guidance: "competitive; equity available".
+- If any required detail is missing, mark [MISSING_DATA: ...].
+
+MODEL_SETTINGS: temperature=0.1, max_tokens=700

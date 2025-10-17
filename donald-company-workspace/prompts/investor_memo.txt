@@ -1,0 +1,12 @@
+INPUT_JSON: Load the contents of canonical.json
+
+TASK: Produce an 850–1000 word investor memo for VCs focused on enterprise AI and industrial automation.
+
+CONSTRAINTS:
+- Tone: crisp, evidence-based, founder-friendly.
+- Structure: 1) One-line thesis, 2) Market & TAM, 3) Product & tech defensibility (explain WDBX briefly), 4) Business model & revenue mechanics, 5) Pilot traction & 90-day plan (use the priority_checklist_90_days exactly), 6) Top 5 risks & mitigations, 7) Ask (funding amount and use of proceeds).
+- Preserve all numeric claims and the 90-day checklist exactly as in the input JSON.
+- If any pilot metric is missing, return exactly the text: [MISSING_DATA: <list of missing required metrics>] and do not invent numbers.
+
+MODEL_SETTINGS: temperature=0.1, max_tokens=1000, top_p=0.95
+RETURN: Plain text investor memo.
